@@ -1,0 +1,80 @@
+@import '_variables';
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: $ftGeometria;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  color: $colorWhite;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.container {
+  padding: 0 0 0 160px;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+a {
+  transition: all .3s;
+  text-decoration: none;
+  color: $colorWhite;
+}
+figure {
+  margin: 0;
+}
+
+section {
+  padding: 130px 0 0;
+  transition: all .3s;
+  .container {
+    height: 100%;
+    position: relative;
+  }
+}
+.btn {
+  color: #01275b;
+  background: #cfde3b;
+  font: 20px/30px $ftGeometriaBold;
+  height: 75px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 22px 30px;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    opacity: .8;
+  }
+}
+.input-holder {
+  margin: 0 0 30px;
+  &.error {
+    .input {
+      border-color: rgb(208, 101, 102);
+    }
+  }
+}
+.input {
+  background: #073b71;
+  border: 1px solid transparent;
+  height: 60px;
+  width: 100%;
+  padding: 0 20px;
+  color: $colorWhite;
+  font: 20px/20px $ftGeometria;
+  &::-webkit-input-placeholder {
+    color: $colorWhite;
+  }
+  &:-moz-placeholder {
+    color: $colorWhite;
+  }
+}
+
